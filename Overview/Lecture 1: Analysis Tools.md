@@ -83,11 +83,11 @@ Although these assumptions are reductive and are violated in the real world, thi
 
 ## Big-O Notation
 
->**\(f(n)\)** is **\(O(g(n))\)** if there exists positive constants **\(c, n_0\)** such that: $$\forall n \geq n_0: f(n) \leq c \cdot g(n)$$
+>**$f(n)$** is **$O(g(n))$** if there exists positive constants **$c, n_0$** such that: $$\forall n \geq n_0: f(n) \leq c \cdot g(n)$$
 
 In simpler terms, we can say **$f(n)$ is $O(g(n))$ if $f(n)$ grows no faster then $c \cdot g(n)$** for all $n \geq n_0$.
 
-For \(O(n), \:\boxed{g(n) = n}\)
+For $O(n), \:\boxed{g(n) = n}$
 
 <br>
 
@@ -97,15 +97,15 @@ For instance:
 
 $$T_1(n) = 6n + 10$$
 
-- Constants do not matter as \(n \rightarrow \infty\)
+- Constants do not matter as $n \rightarrow \infty$
 - Multiplicative factors also do not matter much.
 
 Hence, as $n \rightarrow \infty$, $T_1$ tends to $\boxed{n}$
 <br>
 
-### Example 1: Is \(2n + 10 \in O(n)\)?
+### Example 1: Is $2n + 10 \in O(n)$?
 
-- Approach 1. Solve the inequality for c to find a \((c, n_0)\) pair such that
+- Approach 1. Solve the inequality for c to find a $(c, n_0)$ pair such that
 - Approach 2. Decompose the problem and apply the rules term-by-term
 
 <br>
@@ -114,7 +114,7 @@ Hence, as $n \rightarrow \infty$, $T_1$ tends to $\boxed{n}$
 
 $$ 2n - 10 \leq c * n \:\Rightarrow\: n \leq \frac{10}{c - 2} \:\Rightarrow\: \boxed{n_0 = \frac{10}{c - 2}}$$
 
-\(n_0\) represents the lower bound of n, hence a valid pair would be \((c = 3, n_0 = 10)\) or \((c = 4, n_0 = 5)\).
+$n_0$ represents the lower bound of n, hence a valid pair would be $(c = 3, n_0 = 10)$ or $(c = 4, n_0 = 5)$.
 
 $$\boxed{\text{Hence, } 2n + 10 \in O(n)}$$
 
@@ -123,13 +123,13 @@ $$\boxed{\text{Hence, } 2n + 10 \in O(n)}$$
 
 **Using Approach 2:**
 
-We know that $2n \leq 2n$, and $10 \leq 10n$, hence, \(2n + 10 \leq 2n + 10n \:\Rightarrow\: 2n + 10 \leq 12n\), where \(c = 12\).
+We know that $2n \leq 2n$, and $10 \leq 10n$, hence, $2n + 10 \leq 2n + 10n \:\Rightarrow\: 2n + 10 \leq 12n$, where $c = 12$.
 
-Hence, \(2n + 10\) is bounded above by \(12n\) for \(n \geq 1\), since the inequality does not hold for \(n < 1\).
+Hence, $2n + 10$ is bounded above by $12n$ for $n \geq 1$, since the inequality does not hold for $n < 1$.
 
 <br>
 
-### Example 2: Is \(n^2 \in O(n)\)?
+### Example 2: Is $n^2 \in O(n)$?
 
 <br>
 
@@ -137,9 +137,9 @@ Hence, \(2n + 10\) is bounded above by \(12n\) for \(n \geq 1\), since the inequ
 
 $$n^2 \leq c \cdot n \:\Rightarrow\: n \leq c$$
 
-The constant \(c\) is always greater than or equal to $n$; as $n$ grows, it becomes arbitrarily large, and hence this inequality does not hold \(\forall n \geq n_0\).
+The constant $c$ is always greater than or equal to $n$; as $n$ grows, it becomes arbitrarily large, and hence this inequality does not hold $\forall n \geq n_0$.
 
-Intuitively, \(n^2\) grows much faster than \(n\), so \(n^2\) cannot be bounded by a constant multiple of \(n\).
+Intuitively, $n^2$ grows much faster than $n$, so $n^2$ cannot be bounded by a constant multiple of $n$.
 
 <br>
 
@@ -153,4 +153,4 @@ for (int i = 0; i < n**2; i++)
     count += 1;
 ```
 
-The tightest \(O(n)\) is **\(O(n^2 + n)\)**, which defaults to **\(O(n^2)\)** since lower order terms are ignored.
+The tightest $O(n)$ is **$O(n^2 + n)$**, which defaults to **$O(n^2)$** since lower order terms are ignored.
