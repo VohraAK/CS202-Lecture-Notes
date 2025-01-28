@@ -57,10 +57,10 @@ Suppose we want to analyze the average running time of two algorithms:
 - Use a timing library (as above) to measure time.
 > On Linux/Mac, the `time` utility is used to compute algorithm running times.
 - Ensure that the impact of external factors is minimal / zero.
-- Run the algorithms multiple tumes for each input class / size to filter out random errors.
-- FInd the average and standard deviations of the running times.
+- Run the algorithms multiple times for each input class / size to filter out random errors.
+- Find the average and standard deviations of the running times.
 
-> **Note**: It may be feasible to evaluate algorithms over very large datasets due to practical constraints.
+> **Note**: It may not be feasible to evaluate algorithms over very large datasets due to practical constraints.
 > In some cases, system and configuration overheads are inevitable.
 
 ---
@@ -111,8 +111,8 @@ Hence, as $n \rightarrow \infty$, $T_1$ tends to $\boxed{n}$
 
 ### Example 1: Is $2n + 10 \in O(n)$?
 
-- Approach 1. Solve the inequality for c to find a $(c, n_0)$ pair such that
-- Approach 2. Decompose the problem and apply the rules term-by-term
+- Approach 1. Solve the inequality for c to find a $(c, n_0)$ pair which satisfies it.
+- Approach 2. Decompose the problem and apply the rules term-by-term.
 
 <br>
 
@@ -131,7 +131,7 @@ $$\boxed{\text{Hence, } 2n + 10 \in O(n)}$$
 
 We know that $2n \leq 2n$, and $10 \leq 10n$, hence, $2n + 10 \leq 2n + 10n \:\Rightarrow\: 2n + 10 \leq 12n$, where $c = 12$.
 
-Hence, $2n + 10$ is bounded above by $12n$ for $n \geq 1$, since the inequality does not hold for $n < 1$.
+Hence, $2n + 10$ is bounded above by $12n$ for $n \geq 1$.
 
 <br>
 
