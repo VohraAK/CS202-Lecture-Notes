@@ -65,9 +65,15 @@ Suppose we want to analyze the average running time of two algorithms:
 
 ---
 
-<h1 style="text-align: center;">Asymptotic Analysis / Big-O Analysis</h1>
+<h1 style="text-align: center;">Asymptotic Analysis and Big-O</h1>
 
-## RAM Model of Computation:
+Asymptotic Analysis can help us quantify the growing rate of running time as a function of the input size $n$.
+
+This way, rather than trying to account for overheads in runtime for **each** input size, algorithms can be analyzed based on **varying** input sizes.
+
+<br>
+
+## RAM (Random Access Model) of Computation:
 
 A hypotethical computer which forms the basis of assumptions made for asymptotic analysis.
 
@@ -143,6 +149,13 @@ Intuitively, $n^2$ grows much faster than $n$, so $n^2$ cannot be bounded by a c
 
 <br>
 
+---
+
+![alt text](image.png)
+
+---
+
+
 ### Code Example: Tightest O(n):
 
 ```c
@@ -154,3 +167,9 @@ for (int i = 0; i < n**2; i++)
 ```
 
 The tightest $O(n)$ is **$O(n^2 + n)$**, which defaults to **$O(n^2)$** since lower order terms are ignored.
+
+<br>
+
+>Note: For the best results, complexities must be as "tight" as possilble. 
+
+![alt text](image-3.png)
