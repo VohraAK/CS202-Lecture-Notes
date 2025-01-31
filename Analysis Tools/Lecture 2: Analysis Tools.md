@@ -67,7 +67,7 @@ Suppose we want to analyze the average running time of two algorithms:
 
 <h1 style="text-align: center;">Asymptotic Analysis and Big-O</h1>
 
-Asymptotic Analysis can help us quantify the growing rate of running time as a function of the input size $n$.
+>Asymptotic analysis can help us quantify the growing rate of running time as a function of the input size $n$.
 
 This way, rather than trying to account for overheads in runtime for **each** input size, algorithms can be analyzed based on **varying** input sizes.
 
@@ -87,7 +87,7 @@ Although these assumptions are reductive and are violated in the real world, thi
 
 <br>
 
-## Big-O Notation
+## Big-O $\boxed{O(g(n))}$ Complexity:
 
 >**$f(n)$** is **$O(g(n))$** if there exists positive constants **$c, n_0$** such that: $$\forall n \geq n_0: f(n) \leq c \cdot g(n)$$
 
@@ -151,7 +151,7 @@ Intuitively, $n^2$ grows much faster than $n$, so $n^2$ cannot be bounded by a c
 
 ---
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
@@ -172,4 +172,4 @@ The tightest $O(n)$ is **$O(n^2 + n)$**, which defaults to **$O(n^2)$** since lo
 
 >Note: For the best results, complexities must be as "tight" as possilble. 
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)

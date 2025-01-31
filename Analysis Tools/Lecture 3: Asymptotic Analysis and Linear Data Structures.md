@@ -1,4 +1,4 @@
-<h1 style="text-align=center;">Asymptotic Analysis and Linear Data Structures</h1>
+<h1 style="text-align=center;">Asymptotic Analysis</h1>
 
 ---
 
@@ -55,7 +55,7 @@ In the best case scenario there will be `5` primitive operations.
 
 ## Cousins of Big-O:
 
-### Big-Omega $\Omega(g(n))$:
+### Big-Omega $\boxed{\Omega(g(n))}$ Complexity:
 
 >**$f(n)$** is **$\Omega(g(n))$** if there exists positive constants **$c, n_0$** such that: $$\forall n \geq n_0: f(n) \geq c \cdot g(n)$$
 
@@ -84,7 +84,7 @@ $$7n^2 + 100n + 6 \geq 107 \cdot n \Rightarrow \text{a pair: } (c = 107, n_0 = 1
 
 <br>
 
-### Big-Theta $\Theta(g(n))$:
+### Big-Theta $\boxed{\Theta(g(n))}$ Complexity:
 
 >**$f(n)$** is **$\Omega(g(n))$** if there exists positive constants **$c, n_0$** such that: 
 > $$c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)$$
@@ -100,7 +100,7 @@ Since it is both in Big O and Big-Omega, it is also in Big-Theta.
 ---
 ## Complexity Comparisons
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 
 ---
 
@@ -114,7 +114,7 @@ If Algorithm A is runs in $n^2$ and Algorithm B runs in $10n^2 + n$, both are te
 
 If A  runs in $100n$ and B runs in $\frac{n^2}{100}$, smaller input sizes will cause A to dominate in complexity, but is outstripped by B for larger datasets.
 
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
 ---
 
