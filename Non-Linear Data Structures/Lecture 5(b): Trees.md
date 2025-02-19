@@ -51,3 +51,4 @@ Trees are most widely used in databases, supporting inherently fast lookup, inse
 Another common application is in network routing algorithms, where spanning trees are used to find the shortest path between nodes.
 
 Trees are also used in various algorithms, such as Huffman coding for data compression, and in the representation of expressions in compilers.
+
